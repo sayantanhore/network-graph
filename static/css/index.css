@@ -1,0 +1,61 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: Roboto;
+}
+
+body > div.container {
+  height: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+div.container > div {
+  height: 100%;
+  flex: 1 1 50%;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+div.container > div:first-of-type {
+  border-right: 1px solid #E0E0E0;
+}
+
+span.label {
+  display: block;
+  margin-bottom: 64px;
+}
+input {
+  outline: none;
+  margin-right: 16px;
+}
+button {
+  padding: 2px 16px;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+table.matrix {
+  margin-top: 24px;
+}
+table.matrix > tr > td {
+  width: 40px;
+  height: 36px;
+  border-left: 1px solid #EAEAEA;
+  border-top: 1px solid #EAEAEA;
+  text-align: center;
+  outline: none;
+}
+table.matrix > tr > td:last-of-type {
+  border-right: 1px solid #EAEAEA;
+}
+table.matrix > tr:last-of-type > td {
+  border-bottom: 1px solid #EAEAEA;
+}
