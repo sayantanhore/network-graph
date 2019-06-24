@@ -28,7 +28,7 @@ function arcNS() {
     const unitWidthMultiplier = weights.length + 1;
     return weights.map((weight, index) => {
       const widthToSet = containerWidth * (index + 1) / unitWidthMultiplier;
-      const heightToSet = containerHeight / 2;
+      const heightToSet = containerHeight - 100;
       return createNode(weight / 10, widthToSet, heightToSet);
     });
   }
